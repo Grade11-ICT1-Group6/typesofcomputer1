@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		
+  <title> Group 6 - Tribute Page </title>
+  <!--
+  GROUP 6
+  - Abiera, Shanemark philip
+  - Lomigo, Sharmel B.
+  - Barabas, bench paolo
+  - Denus, Jericho
+  (CREATED BY Del Valle,John Ranier M.) 
+  --> 
+  <style>
+
+
+    /* Styling the body element like body color and margin */
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtjvredfEeW-rfqpTphGnQczQHdaxzMYHvbg&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+      margin: 15%;
+    }
+
+    /* Styling the Title and giving shadow to the title */
+    #title {
+      text-align: center;
+      text-shadow: 5px 5px 10px white;
+      font-size: 7vh;
+    }
+
+    /* Setting width and display type of image */
+    img {
+      display: inline-block;
+      border-radius: 25px;
+      width: 100%;
+    }
+
+    /* Setting font color and font size of the image-caption */
+    #caption {
+      font-size: 17px;
+      font-family: Gill Sans;
+      color: black;
+    }
+
+    /* Styling the content of the page like-padding, font-size, font color etc.*/
+    div#tribute-data {
+      background: linear-gradient(gray, cyan, gray);
+      border-radius: 25px;
+      box-shadow: 5px 5px 5px black;
+      font-family: Georgia;
+      padding: 25px 25px;
+      margin: 11px;
+      margin-top: 50px;
+    }
+
+    /* Styling the title of the content */
+    h1.title {
+      font-size: 35px;
+      color: white;
+      text-align: center;
+      text-shadow: 5px 5px 10px black;
+    }
+
+    /* Styling the link provided at the end */
+    #tribute-link {
+    po  text-decoration: none;
+      color: black;
+    }
+    
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+  </style> 
+ </head> 
+ <body> 
+     
+     <div class="navbar">
+                <ul>
+                     <li><a href="index.html">home</a></li>
+                    <li><a href="parallax.html">types</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="form.html">feedback</a></li>
+                    <li><a href="tribute.html">about us</a></li>
+                </ul>
+            </div>
+     
+  <main id="main"> <!-- Title of the page --> 
+   <h1 id="title">Types of Computer</h1> 
+   <div id="img"> <!--Image of the Tribute Person--> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1EbTRPXHBC42CT5gnlusvzGe40JXXTFhnug&amp;usqp=CAU" id="image" alt="types of computer"> <small id="caption"> </small> 
+   </div> 
+   <div id="tribute-data"> <!--Achievements and other
+        details of the person--> 
+    <h1 class="title"> About us </h1> 
+    <p> We are students from 11 - ICT 1 <b> Group 6 </b> we aim to provide knowledge to others about the types of computers.<br><br> Our group consists of 5 members: <br> </p> 
+    <li>John Ranier M. Del valle</li> 
+    <li>Shanemark Philip Abiera</li> 
+    <li>Sharmel B. Lomigo</li> 
+    <li>Bench Paolo Baradas</li> 
+    <li>Jericho Denus</li> 
+    <br>This website is made to inform people more about the types of computers and their functions. 
+    <br> 
+    <br> 
+    <p></p> 
+   </div> 
+   <br> 
+  </main> 
+ </body>
+</html>

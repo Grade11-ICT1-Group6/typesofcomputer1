@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	
+	<title> Group 6 - Build a Survey Form using HTML and CSS </title>
+	
+    <!--
+	GROUP 6
+	- Abiera, Shanemark Philip
+	- Lomigo, Sharmel
+	- Denus, Jericho
+	- Baradas, Bench Paolo
+    - Del Valle, John Ranier 
+	(CREATED BY ABIERA, SHANEMARK PHILIP) 
+	-->
+
+	<style>
+        
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			font-family: "Poppins", sans-serif;
+			text-align: center;
+			background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtjvredfEeW-rfqpTphGnQczQHdaxzMYHvbg&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+		    border-radius: 25px;
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+	.button {
+  border-radius: 25px;
+  background-color: #05c46b;
+  border: none;
+  text-align: center;
+  font-size: 21px;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: ';D';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+	</style>
+</head>
+
+<body>
+    
+    <div class="navbar">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="parallax.html">types</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="form.html">feedback</a></li>
+                    <li><a href="tribute.html">about us</a></li>
+                </ul>
+            </div>
+            
+	<h1 style="color:white">Sample Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				<b>Name</b>
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				<b>Email</b>
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				<b>Age</b>
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role"><b>
+				What type of Computer do you think is good and your personal favorite</b>
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="Personal Computer">Personal Computer</option>
+				<option value="Main Frame Computer">Main Frame Computer</option>
+				<option value="Super Computer">
+					Super Computer
+				</option>
+				<option value="Work Station">Work Station</option>
+			</select>
+		</div>
+		
+		<div class="form-control">
+			<label><b>
+				Was this website helpful to provide you some information?</b>
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">I dont understand a thing</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment"><b>
+				Is there anything you can suggest to make the website look better?</b>
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" class="button"><span> Submit   </span></button>
+        </form>
+    </body>
+</html>
